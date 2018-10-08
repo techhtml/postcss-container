@@ -1,4 +1,4 @@
-# PostCSS Scopify
+# PostCSS Container
 
 [![Build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
@@ -53,19 +53,19 @@ __Example output__
 ## Installation
 
 ```
-npm install postcss-scopify
+npm install postcss-cotaniner
 ```
 
 ## Usage
 
 ```javascript
-var fs        = require('fs');
-var postcss   = require('postcss');
-var scopify   = require('postcss-scopify');
+var fs                 = require('fs');
+var postcss            = require('postcss');
+var postcssContainer   = require('postcss-container');
 
 var css = fs.readFileSync('css/my-file.css', 'utf8').toString();
 var out = postcss()
-          .use(scopify('#scope'))
+          .use(postcssContainer('#scope'))
           .process(css)
           .css;
 ```
