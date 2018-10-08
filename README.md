@@ -5,7 +5,7 @@
 [![Downloads][downloads-image]][downloads-url]
 
 [PostCSS] plugin that adds a user input scope to each selector.
-for a command line interface, see [scopify-cli]. 
+for a command line interface.
 
 [`poststylus`]: https://github.com/seaneking/poststylus
 [PostCSS API]:  https://github.com/postcss/postcss/blob/master/docs/api.md
@@ -24,7 +24,6 @@ for a command line interface, see [scopify-cli].
 [downloads-image]: https://img.shields.io/npm/dm/postcss-scopify.svg?style=flat-square
 [downloads-url]: https://npmjs.org/package/postcss-scopify
 
-[scopify-cli]: https://github.com/pazams/scopify-cli
 [PostCSS]: https://github.com/postcss/postcss
 
 __Example input__
@@ -74,16 +73,3 @@ You can use PostCSS with your build tool.
 Note there are plugins for [Grunt], [Gulp], [webpack], [Broccoli],
 [Brunch] and [ENB]. 
 See [PostCSS] docs for examples for your environment.
-
-## Change Log
-### v0.1.8
-closes [#10](https://github.com/pazams/postcss-scopify/issues/10)
-
-### v0.1.7
-fixes [#7](https://github.com/pazams/postcss-scopify/issues/7)
-
-### v0.1.5
-closes [#3](https://github.com/pazams/postcss-scopify/issues/3)
-
-### v0.1.4
-fixes [#4](https://github.com/pazams/postcss-scopify/issues/4)
