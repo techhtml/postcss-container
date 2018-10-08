@@ -3,9 +3,9 @@ var postcss = require('postcss');
 
 var  conditionalGroupRules = ['media','supports','document'];
 
-module.exports = postcss.plugin('postcss-scopify', scopify);
+module.exports = postcss.plugin('postcss-container', container);
 
-function scopify(scope, options) {
+function container(scope, options) {
 
     options = options || {};
 
@@ -31,6 +31,10 @@ function scopify(scope, options) {
                 // special case for a top level '&' selector, resolves to scope
                 if (selector === '&') {
                     return scope;
+                }
+
+                if(selector.match(scope) !== null) {
+                    return scope + ' ' + selector.replace(scope, '')
                 }
 
                 return scope + ' ' + selector;
